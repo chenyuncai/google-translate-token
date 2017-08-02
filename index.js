@@ -1,6 +1,6 @@
 /**
  * Last update: 2016/06/26
- * https://translate.google.com/translate/releases/twsfe_w_20160620_RC00/r/js/desktop_module_main.js
+ * https://translate.google.cn/translate/releases/twsfe_w_20160620_RC00/r/js/desktop_module_main.js
  *
  * Everything between 'BEGIN' and 'END' was copied from the url above.
  */
@@ -80,7 +80,7 @@ function updateTKK() {
         if (Number(window.TKK.split('.')[0]) === now) {
             resolve();
         } else {
-            got('https://translate.google.com').then(function (res) {
+            got('https://translate.google.cn').then(function (res) {
                 var code = res.body.match(/TKK=(.*?)\(\)\)'\);/g);
 
                 if (code) {
